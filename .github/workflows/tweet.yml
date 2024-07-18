@@ -3,7 +3,7 @@ name: Tweet Word of the Day
 on:
   schedule:
     - cron: '0 0 * * *' # Runs at 0:00 UTC+0 every day
-  workflow_dispach:
+  workflow_dispatch:
 
 jobs:
   tweet-word-of-the-day:
