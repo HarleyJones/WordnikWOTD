@@ -26,4 +26,8 @@ jobs:
         run: echo "COOKIES_JSON=$(echo ${{ secrets.COOKIES_JSON }} | base64 --decode)" >> $GITHUB_ENV
 
       - name: Run script
-        run: python main.py
+        run: python3 main.py
+        env:
+          # Ensure to set necessary environment variables here
+          COOKIES_JSON: ${{ secrets.COOKIES_JSON }}
+
